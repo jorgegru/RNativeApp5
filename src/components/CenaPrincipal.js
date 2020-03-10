@@ -26,11 +26,16 @@ export default function CenaPrincipal(props) {
       <View style={ styles.menu }>
         <View style={ styles.menuGrupo }>
 
-          <TouchableHighlight onPress={ () => props.navigator.push({ id: 'b'}) }>
+          <TouchableHighlight onPress={ () => props.navigator.push({ id: 'b'}) } 
+            underlayColor={'B8C941'}
+            activeOpacity={0.3}
+          >
             <Image style={ styles.imgMenu } source={menuCliente} />
           </TouchableHighlight>
 
-          <Image style={ styles.imgMenu } source={menuContato} />
+          <TouchableHighlight onPress={ () => props.navigator.push({ id: 'c'}) }>
+            <Image style={ styles.imgMenu } source={menuContato} />
+          </TouchableHighlight>
 
         </View>
 

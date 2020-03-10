@@ -8,9 +8,9 @@ const cliente2 = require('../imgs/cliente2.png');
 
 export default function CenaClientes(props) {
   return (
-    <View >
+    <View style={{ flex: 1, backgroundColor: '#FFF'}}>
       <StatusBar 
-        backgroundColor = '#CCC'
+        backgroundColor='#B8C941'
       />
       
       <BarraNavegacao voltar navigator={ props.navigator } />

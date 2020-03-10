@@ -4,6 +4,7 @@ import { Navigator } from 'react-native-deprecated-custom-components';
 
 import CenaPrincipal from './src/components/CenaPrincipal'
 import CenaClientes from './src/components/CenaClientes'
+import CenaContatos from './src/components/CenaContatos';
 
 export default function App() {
   return (
@@ -16,6 +17,10 @@ export default function App() {
 
         if (route.id === 'b') {
           return (<CenaClientes navigator={ navigator } />);
+        }
+
+        if (route.id === 'c') {
+          return (<CenaContatos navigator={ navigator } />);
         }
       }}
     />
